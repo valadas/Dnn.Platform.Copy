@@ -1,0 +1,16 @@
+name: CI
+on: create
+
+# Sets the manifest and other files version upon creation of a release branch
+jobs:
+  updateVersions:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Get the release branch version
+      id: branchVersion
+      if: ${{ github.event.ref_type == 'branch' && startsWith(github.event.ref, 'release/') }}
+      env:
+        BRANCH_NAME: ${{ github.event.ref }}
+      run: echo We are on a release branch $BRANCH_NAME
