@@ -16,4 +16,4 @@ jobs:
     - name: Set manifest versions
       uses: valadas/set-dnn-manifest-versions@v1
       with:
-        version: "01.02.03"
+        version: ${{ steps.branchVersion.outputs.manifestSafeVersionString }}
