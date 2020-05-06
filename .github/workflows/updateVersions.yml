@@ -16,6 +16,6 @@ jobs:
     - name: Spit out the version for testing
       if: ${{ github.event.ref_type == 'branch' && startsWith(github.event.ref, 'release/') }}
       env:
-        VERSION: ${{ steps.branchVersion.outputs.manifestSafeVersionString
+        VERSION: ${{ steps.branchVersion.outputs.manifestSafeVersionString }}
       run: echo Version $VERSION
       
