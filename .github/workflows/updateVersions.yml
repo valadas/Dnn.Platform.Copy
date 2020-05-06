@@ -1,4 +1,4 @@
-name: CI
+name: Update Versions
 on: create
 
 # Sets the manifest and other files version upon creation of a release branch
