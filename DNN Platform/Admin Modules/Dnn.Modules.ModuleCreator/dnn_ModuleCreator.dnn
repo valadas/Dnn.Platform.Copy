@@ -1,6 +1,6 @@
 ﻿<dotnetnuke type="Package" version="5.0">
     <packages>
-        <package name="DotNetNuke.Module Creator" type="Module" version="09.04.04">
+        DotNetNuke.Module Creator09.04.04$309.06.01$5>
             <friendlyName>Module Creator</friendlyName>
             <description>Development of modules.</description>
             <iconFile>~/Icons/Sigma/ModuleCreator_32x32.png</iconFile>
