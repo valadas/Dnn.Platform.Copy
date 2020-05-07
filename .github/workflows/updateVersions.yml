@@ -14,7 +14,7 @@ jobs:
       id: branchVersion
       
     - name: Set manifest versions
-      uses: valadas/set-dnn-manifest-versions@master
+      uses: valadas/set-dnn-manifest-versions@5239a5f3b332e5d1439e8f50f3c00f152cafbd97
       with:
         version: ${{ steps.branchVersion.outputs.manifestSafeVersionString }}
         skipFile: './Build/Cake/unversionedManifests.txt'
