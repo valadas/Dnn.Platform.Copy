@@ -17,4 +17,5 @@ jobs:
       uses: valadas/set-dnn-manifest-versions@master
       with:
         version: ${{ steps.branchVersion.outputs.manifestSafeVersionString }}
-        skipFile: './Build/Cake/unversionedManifests.txt'  
+        skipFile: './Build/Cake/unversionedManifests.txt'
+        includeSolutionInfo: true
