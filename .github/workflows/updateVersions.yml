@@ -19,3 +19,16 @@ jobs:
         version: ${{ steps.branchVersion.outputs.manifestSafeVersionString }}
         skipFile: './Build/Cake/unversionedManifests.txt'
         includeSolutionInfo: true
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v2.7.1
+      with:
+        commit-message: Updates versions as per release candidate creation
+        title: Updates versions as per release candidate creation
+        body: This is a release managemnt task and we are self-approving it for that reason.
+        # A comma separated list of labels.
+        labels: 'Type: Build/Release'
+        milestone: ${{ steps.branchVersion.outputs.major }}.${{ steps.branchVersion.outputs.minor }}.${{ steps.branchVersion.outputs.patch }}
+        # The pull request branch name.
+        branch: update-versions/patch
+        # The branch suffix type.
+        branch-suffix: short-commit-hash
