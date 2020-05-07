@@ -18,3 +18,19 @@ jobs:
       with:
         version: ${{ steps.branchVersion.outputs.manifestSafeVersionString }}
         skipFile: './Build/Cake/unversionedManifests.txt'
+    
+    - name: Get latest dnn version
+      uses: valadas/dnn-platform-get-version@v1
+      id: latestDnn
+    
+    - name: Update issue template
+      uses: jacobtomlinson/gha-find-replace@0.1.1
+      with:
+        include: .github/ISSUE_TEMPLATE/bug-report.md
+        # The string we want to replace
+        find: /\* \[ \].*alpha build\n(.*\n?.*latest supported release)/gm
+        # The new string to replace with
+        replace: |
+          * [ ] ${{ steps.branchVersion.outputs.manifestSafeVersionString }} release candidate
+          * [ ] ${{ steps.latestDnn.outputs.manifestSafeVersionString }} latest supported release
+    
