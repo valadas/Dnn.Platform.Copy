@@ -1,21 +1,21 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="DNNJWT" type="Provider" version="09.04.04">
+    <package name="DNNJWT" type="Provider" version="09.06.01">
       <friendlyName>DNN JWT Auth Handler</friendlyName>
       <description>DNN Json Web Token Authentication (JWT) library for cookie-less Mobile authentication clients</description>
       <dependencies/>
+      <dependencies>
+        <dependency type="CoreVersion">08.00.00</dependency>
+      </dependencies>
       <owner>
         <name>DNN</name>
         <organization>.NET Foundation</organization>
         <url>https://dnncommunity.org</url>
         <email>info@dnncommunity.org</email>
       </owner>
-      <license src="license.txt" />
-      <releaseNotes src="releaseNotes.txt" />
+      <license src="license.txt"/>
+      <releaseNotes src="releaseNotes.txt"/>
       <azureCompatible>true</azureCompatible>
-      <dependencies>
-        <dependency type="CoreVersion">08.00.00</dependency>
-      </dependencies>
       <components>
         <component type="Assembly">
           <assemblies>
@@ -51,8 +51,7 @@
               <configuration>
                 <nodes>
                   <node path="/configuration/dotnetnuke/authServices/messageHandlers" action="update" key="name" collision="overwrite">
-                    <add name="JWTAuth" type="Dnn.AuthServices.Jwt.Auth.JwtAuthMessageHandler, Dnn.AuthServices.Jwt"
-                         enabled="true" defaultInclude="false" forceSSL="true" />
+                    <add name="JWTAuth" type="Dnn.AuthServices.Jwt.Auth.JwtAuthMessageHandler, Dnn.AuthServices.Jwt" enabled="true" defaultInclude="false" forceSSL="true"/>
                   </node>
                 </nodes>
               </configuration>
@@ -60,7 +59,7 @@
             <uninstall>
               <configuration>
                 <nodes>
-                  <node path="/configuration/dotnetnuke/authServices/messageHandlers/add[@name='JWTAuth']" action="remove" />
+                  <node path="/configuration/dotnetnuke/authServices/messageHandlers/add[@name='JWTAuth']" action="remove"/>
                 </nodes>
               </configuration>
             </uninstall>

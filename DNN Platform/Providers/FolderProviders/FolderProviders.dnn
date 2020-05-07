@@ -1,6 +1,6 @@
-﻿<dotnetnuke type="Package" version="5.0">
+<dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="DotNetNuke.Providers.FolderProviders" type="Provider" isSystem="true" version="09.04.04">
+    <package name="DotNetNuke.Providers.FolderProviders" type="Provider" isSystem="true" version="09.06.01">
       <friendlyName>DotNetNuke Folder Providers</friendlyName>
       <description>Azure Folder Providers for DotNetNuke.</description>
       <dependencies/>
@@ -10,11 +10,11 @@
         <url>https://dnncommunity.org</url>
         <email>info@dnncommunity.org</email>
       </owner>
-      <license src="license.txt" />
-      <releaseNotes src="releaseNotes.txt" /> 
+      <license src="license.txt"/>
+      <releaseNotes src="releaseNotes.txt"/>
       <azureCompatible>true</azureCompatible>
       <components>
-        <component type="Provider" />
+        <component type="Provider"/>
         <component type="Assembly">
           <assemblies>
             <assembly>
@@ -43,9 +43,7 @@
               <configuration>
                 <nodes>
                   <node path="/configuration/dotnetnuke/folder/providers" action="update" key="name" collision="save">
-                    <add name="AzureFolderProvider"
-                         type="DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders"
-                         providerPath="~/Providers/FolderProviders/AzureFolderProvider/" />
+                    <add name="AzureFolderProvider" type="DotNetNuke.Providers.FolderProviders.AzureFolderProvider.AzureFolderProvider, DotNetNuke.Providers.FolderProviders" providerPath="~/Providers/FolderProviders/AzureFolderProvider/"/>
                   </node>
                 </nodes>
               </configuration>
@@ -53,13 +51,13 @@
             <uninstall>
               <configuration>
                 <nodes>
-                  <node path="/configuration/dotnetnuke/folder/providers/add[@name='AzureFolderProvider']" action="remove" />
+                  <node path="/configuration/dotnetnuke/folder/providers/add[@name='AzureFolderProvider']" action="remove"/>
                 </nodes>
               </configuration>
             </uninstall>
           </config>
         </component>
-        <component type="Cleanup" version="09.02.01" fileName="09.02.00.txt" />
+        <component type="Cleanup" version="09.02.01" fileName="09.02.00.txt"/>
         <component type="File">
           <files>
             <basePath>Providers\FolderProviders\AzureFolderProvider</basePath>

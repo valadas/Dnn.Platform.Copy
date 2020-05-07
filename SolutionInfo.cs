@@ -1,4 +1,4 @@
-﻿// 
+﻿//[[[assembly: AssemblyInformationalVersion("9.6.1.0 Release Candidate")]ssembly: AssemblyFileVersion("9.6.1.0")]ssembly: AssemblyVersion("9.6.1.0")]
 // Copyright (c) .NET Foundation. All rights reserved.
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // 

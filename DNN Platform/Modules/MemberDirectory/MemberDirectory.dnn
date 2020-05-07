@@ -1,7 +1,7 @@
 <dotnetnuke type="Package" version="6.0">
   <packages>
-    <package name="DotNetNuke.Modules.MemberDirectory" type="Module"  isSystem="true" version="09.04.04">
-      <friendlyName>Member Directory</friendlyName>      
+    <package name="DotNetNuke.Modules.MemberDirectory" type="Module" isSystem="true" version="09.06.01">
+      <friendlyName>Member Directory</friendlyName>
       <description>The Member Directory module displays a list of Members based on role, profile property or relationship.</description>
       <iconFile>~/DesktopModules/MemberDirectory/Images/member_list_32X32.png</iconFile>
       <owner>
@@ -10,8 +10,8 @@
         <url>https://dnncommunity.org</url>
         <email>info@dnncommunity.org</email>
       </owner>
-      <license src="License.txt"></license>
-      <releaseNotes src="ReleaseNotes.txt"></releaseNotes>
+      <license src="License.txt"/>
+      <releaseNotes src="ReleaseNotes.txt"/>
       <azureCompatible>true</azureCompatible>
       <dependencies>
         <dependency type="CoreVersion">07.00.00</dependency>
@@ -54,16 +54,16 @@
               </moduleDefinition>
             </moduleDefinitions>
           </desktopModule>
-		  <eventMessage>
-		  	<processorType>DotNetNuke.Entities.Modules.EventMessageProcessor, DotNetNuke</processorType>
-			<processorCommand>UpgradeModule</processorCommand>
-			<attributes>
-				<businessControllerClass>DotNetNuke.Modules.MemberDirectory.Components.UpgradeController, DotNetNuke.Modules.MemberDirectory</businessControllerClass>
-				<desktopModuleID>[DESKTOPMODULEID]</desktopModuleID>
-				<upgradeVersionsList>07.00.06</upgradeVersionsList>
-			</attributes>
-		  </eventMessage>
-		</component>
+          <eventMessage>
+            <processorType>DotNetNuke.Entities.Modules.EventMessageProcessor, DotNetNuke</processorType>
+            <processorCommand>UpgradeModule</processorCommand>
+            <attributes>
+              <businessControllerClass>DotNetNuke.Modules.MemberDirectory.Components.UpgradeController, DotNetNuke.Modules.MemberDirectory</businessControllerClass>
+              <desktopModuleID>[DESKTOPMODULEID]</desktopModuleID>
+              <upgradeVersionsList>07.00.06</upgradeVersionsList>
+            </attributes>
+          </eventMessage>
+        </component>
         <component type="Assembly">
           <assemblies>
             <assembly>
