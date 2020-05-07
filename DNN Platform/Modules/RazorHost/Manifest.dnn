@@ -1,6 +1,6 @@
-﻿<dotnetnuke type="Package" version="5.0">
+<dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="{0}" type="Module"  isSystem="true" version="09.04.04">
+    <package name="{0}" type="Module" isSystem="true" version="09.06.01">
       <friendlyName>{0}</friendlyName>
       <description>{1}</description>
       <owner>
@@ -10,7 +10,7 @@
         <email/>
       </owner>
       <license src="license.txt"/>
-      <releaseNotes src="releaseNotes.txt" />
+      <releaseNotes src="releaseNotes.txt"/>
       <azureCompatible>true</azureCompatible>
       <dependencies>
         <dependency type="coreversion">07.00.00</dependency>

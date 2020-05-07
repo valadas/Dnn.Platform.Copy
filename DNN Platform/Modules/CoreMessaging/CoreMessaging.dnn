@@ -1,7 +1,7 @@
 <dotnetnuke type="Package" version="6.0">
   <packages>
-    <package name="DotNetNuke.Modules.CoreMessaging" type="Module" isSystem="true" version="09.04.04">
-      <friendlyName>Message Center</friendlyName>      
+    <package name="DotNetNuke.Modules.CoreMessaging" type="Module" isSystem="true" version="09.06.01">
+      <friendlyName>Message Center</friendlyName>
       <description>Core Messaging module allows users to message each other.</description>
       <iconFile>~/DesktopModules/CoreMessaging/Images/messaging_32X32.png</iconFile>
       <owner>
@@ -10,8 +10,8 @@
         <url>https://dnncommunity.org</url>
         <email>info@dnncommunity.org</email>
       </owner>
-      <license src="License.txt"></license>
-      <releaseNotes src="ReleaseNotes.txt"></releaseNotes>
+      <license src="License.txt"/>
+      <releaseNotes src="ReleaseNotes.txt"/>
       <azureCompatible>true</azureCompatible>
       <dependencies>
         <dependency type="CoreVersion">07.00.00</dependency>

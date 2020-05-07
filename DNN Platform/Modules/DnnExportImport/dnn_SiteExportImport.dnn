@@ -1,6 +1,6 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="SiteExportImport" type="Library" isSystem="false" version="09.04.04">
+    <package name="SiteExportImport" type="Library" isSystem="false" version="09.06.01">
       <friendlyName>Site Export Import</friendlyName>
       <description>DotNetNuke Corporation Site Export Import Library</description>
       <iconFile>Images/Files_32x32_Standard.png</iconFile>
@@ -10,8 +10,8 @@
         <url>https://dnncommunity.org</url>
         <email>info@dnncommunity.org</email>
       </owner>
-      <license src="License.txt"></license>
-      <releaseNotes src="ReleaseNotes.txt"></releaseNotes>
+      <license src="License.txt"/>
+      <releaseNotes src="ReleaseNotes.txt"/>
       <azureCompatible>true</azureCompatible>
       <dependencies>
         <dependency type="CoreVersion">09.01.00</dependency>
@@ -77,7 +77,7 @@
         <attributes>
           <businessControllerClass>Dnn.ExportImport.Components.Controllers.BusinessController, DotNetNuke.SiteExportImport</businessControllerClass>
           <desktopModuleID>[DESKTOPMODULEID]</desktopModuleID>
-         <upgradeVersionsList>09.01.00</upgradeVersionsList>
+          <upgradeVersionsList>09.01.00</upgradeVersionsList>
         </attributes>
       </eventMessage>
     </package>
